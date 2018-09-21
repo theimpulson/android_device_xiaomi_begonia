@@ -61,9 +61,15 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    com.nxp.nfc.nq \
+    libnqnfc_nci_jni \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    NQNfcNci \
+    SecureElement \
+    Tag
 
 # Trust
 PRODUCT_PACKAGES += \
