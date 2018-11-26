@@ -43,8 +43,9 @@ def PatchSELinux(info):
   info.script.AppendExtra('unmount("/system_root");')
 
 def PatchVendor(info):
-  info.script.Print("Patching vendor init scripts...")
+  info.script.Print("Patching vendor init scripts & libs...")
   info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/platform/bootdevice/by-name/vendor", "/vendor");')
   info.script.AppendExtra('run_program("/sbin/sed", "-i", "s/wait,check,formattable,quota,resize/latemount,wait,check,formattable,quota/", "/vendor/etc/fstab.mt6785");')
   info.script.AppendExtra('run_program("/sbin/sed", "-i", "s/fstab.mt6785$/fstab.mt6785 --early\\n    mount_all \/vendor\/etc\/fstab.mt6785 --late/", "/vendor/etc/init/hw/init.mt6785.rc");')
+  info.script.AppendExtra('run_program("/sbin/sed", "-i", "-e", "s/AT+EAIC=2/AT+EAIC=3/g", "/vendor/lib64/libmtk-ril.so");')
   info.script.AppendExtra('unmount("/vendor");')
