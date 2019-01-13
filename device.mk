@@ -63,5 +63,9 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Trust
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
