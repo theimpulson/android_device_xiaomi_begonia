@@ -50,7 +50,6 @@ BUILD_FINGERPRINT := "Redmi/begonia/begonia:9/PPR1.180610.011/V10.4.4.0.PGGCNXM:
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="begonia-user 9 PPR1.180610.011 V10.4.4.0.PGGCNXM release-keys" \
-    PRODUCT_NAME="begonia" \
-    TARGET_DEVICE="begonia"
+    PRODUCT_NAME="begonia"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
