@@ -17,6 +17,7 @@
 DEVICE_PATH := device/redmi/begonia
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
 
 # Architecture
 TARGET_ARCH := arm64
