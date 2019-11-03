@@ -8,3 +8,4 @@ on post-fs
     mount none /dev/null vendor/overlay/DevicesAndroidOverlay.apk bind
     mount none /dev/null vendor/overlay/DevicesOverlay.apk bind
     mount none /dev/null vendor/overlay/FrameworksResCommon.apk bind
+    mount none /system/etc/media_codecs_mediatek_video.xml /vendor/etc/media_codecs_mediatek_video.xml bind
