@@ -55,10 +55,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-mediatek
 
-# Media
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_mediatek_video.xml
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
