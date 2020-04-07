@@ -32,4 +32,14 @@ $(GATEKEEPER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(GATEKEEPER_SYMLINKS)
 
+VULKAN_SYMLINKS := $(TARGET_OUT_VENDOR)
+$(VULKAN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating vulkan symlinks: $@"
+	@mkdir -p $@/lib/hw/
+	@mkdir -p $@/lib64/hw/
+	@ln -sf $@/lib/egl/libGLES_VULKAN.so $@/lib/hw/vulkan.mt6785.so
+	@ln -sf $@/lib64/egl/libGLES_VULKAN.so $@/lib64/hw/vulkan.mt6785.so
+
+ALL_DEFAULT_INSTALLED_MODULES += $(VULKAN_SYMLINKS)
+
 endif
