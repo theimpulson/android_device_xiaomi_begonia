@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-Begonia
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
