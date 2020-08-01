@@ -1,0 +1,10 @@
+[
+  {
+    "repository" : "android_hardware_mediatek",
+    "target_path": "hardware/mediatek"
+  },
+  {
+    "repository" : "android_kernel_redmi_mt6785",
+    "target_path": "kernel/redmi/mt6785"
+  }
+]
