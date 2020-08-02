@@ -4,6 +4,10 @@
     "target_path": "hardware/mediatek"
   },
   {
+    "repository" : "android_device_mediatek_sepolicy",
+    "target_path": "device/mediatek/sepolicy"
+  },
+  {
     "repository" : "android_kernel_redmi_mt6785",
     "target_path": "kernel/redmi/mt6785"
   }
