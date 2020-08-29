@@ -8,7 +8,7 @@
     "target_path": "device/mediatek/sepolicy"
   },
   {
-    "repository" : "android_kernel_redmi_mt6785",
-    "target_path": "kernel/redmi/mt6785"
+    "repository" : "android_kernel_xiaomi_mt6785",
+    "target_path": "kernel/xiaomi/mt6785"
   }
 ]

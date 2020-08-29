@@ -1,10 +1,11 @@
 #
 # Copyright (C) 2019 The Potato Open Sauce Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/redmi/begonia
+DEVICE_PATH := device/xiaomi/begonia
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -287,4 +288,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Inherit vendor
-$(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
+$(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)

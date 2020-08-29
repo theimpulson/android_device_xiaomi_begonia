@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2020 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 APPEND_CERTS := $(DEVICE_PATH)/dtbo/append_certs.py
 BOARD_DTBO_CFG := $(DTBO_OUT)/dtboimg.cfg
 MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)

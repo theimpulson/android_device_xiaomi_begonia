@@ -21,3 +21,5 @@ It was released in September 2019.
 ![begonia](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-8-pro-01.jpg)
 
 **Copyright 2020 The Android Open Source Project**
+
+**Copyright 2020 The The LineageOS Project**

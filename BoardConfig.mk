@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2019 Potato Open Sauce Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/redmi/begonia
+DEVICE_PATH := device/xiaomi/begonia
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
@@ -75,7 +76,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 1
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/redmi/mt6785
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
 TARGET_KERNEL_CONFIG := begonia_user_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r353983d
@@ -153,4 +154,4 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
--include vendor/redmi/begonia/BoardConfigVendor.mk
+-include vendor/xiaomi/begonia/BoardConfigVendor.mk
