@@ -149,7 +149,6 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # VNDK
 BOARD_VNDK_VERSION := current
-BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/begonia/BoardConfigVendor.mk
