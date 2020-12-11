@@ -22,9 +22,6 @@ PRODUCT_RELEASE_NAME := begonia
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Set Shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Inherit from begonia device makefile
 $(call inherit-product, device/xiaomi/begonia/device.mk)
 

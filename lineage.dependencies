@@ -1,14 +1,6 @@
 [
   {
-    "repository" : "android_hardware_mediatek",
-    "target_path": "hardware/mediatek"
-  },
-  {
-    "repository" : "android_device_mediatek_sepolicy",
-    "target_path": "device/mediatek/sepolicy"
-  },
-  {
-    "repository" : "android_kernel_xiaomi_mt6785",
-    "target_path": "kernel/xiaomi/mt6785"
+    "repository": "android_device_xiaomi_mt6785-common",
+    "target_path": "device/xiaomi/mt6785-common"
   }
 ]
